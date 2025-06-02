@@ -54,6 +54,7 @@ public struct SystemDefaultTheme {
   }
 }
 
+@MainActor
 @Observable
 @dynamicMemberLookup
 public final class Themes<Theme> {
