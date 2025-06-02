@@ -16,7 +16,7 @@ Add this package to your Xcode project using Swift Package Manager:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/yourusername/Themes.git", from: "1.0.0")
+    .package(url: "https://github.com/lambdaswift/Themes.git", from: "0.0.1")
 ]
 ```
 
