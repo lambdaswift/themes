@@ -64,3 +64,17 @@ struct ComplexTheme {
     #expect(themes.titleFont == .system(.title))
     #expect(themes.spacing == 16)
 }
+
+@Test func testSystemDefaultTheme() throws {
+    let themes = Themes(current: SystemDefaultTheme())
+    
+    // Test fonts
+    #expect(themes.current.fonts.largeTitle == .largeTitle)
+    #expect(themes.current.fonts.body == .body)
+    #expect(themes.current.fonts.caption == .caption)
+    
+    // Test colors
+    #expect(themes.current.colors.primary == .primary)
+    #expect(themes.current.colors.accent == .accentColor)
+    #expect(themes.current.colors.blue == .blue)
+}
